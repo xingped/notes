@@ -112,17 +112,19 @@ git push heroku master
 ```js
 {
   "development": {
-    "database": "projectdb",
+    "database": "projectdb_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "database": "projectdb",
+    "database": "projectdb_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "database": "projectdb_production",
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
   }
 }
 
