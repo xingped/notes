@@ -122,7 +122,6 @@ git push heroku master
     "dialect": "postgres"
   },
   "production": {
-    "database": "projectdb_production",
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   }
